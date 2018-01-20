@@ -1,0 +1,18 @@
+{
+  "version": "0.1.0",
+  "id": "@msaaive-apps/weather-station",
+  "directories": {
+    "steps": "./",
+    "pipelines": "./pipelines/"
+  },
+  "steps": [],
+  "configuration": {
+    "requestTimeout": {
+      "type": "static",
+      "destination": "backend",
+      "params": {
+        "value": "30000"
+      }
+    }
+  }
+}
