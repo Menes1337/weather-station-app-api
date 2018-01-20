@@ -1,8 +1,7 @@
 {
   "version": "0.1.0",
-  "id": "@msaaive-apps/weather-station",
+  "id": "@msaaive-apps/weather-station-api",
   "directories": {
-    "steps": "./",
     "pipelines": "./pipelines/"
   },
   "steps": [],

@@ -4,14 +4,14 @@
   "description": "This is the Shopgate Connect Extension for our wheather app",
   "scripts": {
     "precommit": "npm run test && npm run lint-staged",
-    "test": "_mocha --use_strict --require test/setupBackend.js --recursive test/unit",
-    "testIntegration": "_mocha --use_strict --timeout 3000 --require test/setupBackend.js --recursive test/integration",
+    "test": "_mocha --use_strict --require ../test/setupBackend.js --recursive ../test/unit",
+    "testIntegration": "_mocha --use_strict --timeout 3000 --require ../test/setupBackend.js --recursive ../test/integration",
     "lint": "standard",
     "lint-staged": "lint-staged",
     "check": "nsp check",
-    "cover": "nyc _mocha --require test/setupBackend.js --recursive test/unit",
-    "coverIntegration": "nyc _mocha --use_strict --timeout 3000 --require test/setupBackend.js --recursive test/integration",
-    "coverAll": "nyc _mocha --use_strict --timeout 3000 --require test/setupBackend.js --recursive test/integration --recursive test/unit"
+    "cover": "nyc _mocha --require ../test/setupBackend.js --recursive ../test/unit",
+    "coverIntegration": "nyc _mocha --use_strict --timeout 3000 --require ../test/setupBackend.js --recursive ../test/integration",
+    "coverAll": "nyc _mocha --use_strict --timeout 3000 --require ../test/setupBackend.js --recursive ../test/integration --recursive ../test/unit"
   },
   "lint-staged": {
     "*.js": "npm run lint"
