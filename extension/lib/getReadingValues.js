@@ -12,7 +12,9 @@ module.exports = async (context, input, cb) => {
     password: context.config.basicAuthPassword
   })
 
-  cb(null, {
+  cb(
+    null,
+    {
       readingValues: await fhemApiClient.getReadingValues(
         input.device,
         input.reading ? input.reading : null,
