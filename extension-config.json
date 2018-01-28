@@ -1,9 +1,6 @@
 {
   "version": "0.1.0",
-  "id": "@msaaive-apps/weather-station-api",
-  "directories": {
-    "pipelines": "./pipelines/"
-  },
+  "id": "@massive-apps/weather-station-api",
   "steps": [],
   "configuration": {
     "requestTimeout": {

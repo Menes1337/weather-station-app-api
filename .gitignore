@@ -1,2 +1,4 @@
 .idea
 extension/node_modules
+extension/config.json
+extension/example.js

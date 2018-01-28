@@ -21,7 +21,9 @@
     "url": "https://github.com/Menes1337/weather-station-app-api.git"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.17.1"
+  },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-standard": "^10.2.1",
