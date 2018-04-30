@@ -1,4 +1,4 @@
-const FhemApiClient = require('./client')
+const FhemApiClient = require('./Client')
 const axios = require('axios')
 
 class FhemApiFactory {

@@ -1,6 +1,6 @@
 {
   "name": "@massive-apps/weather-station-api",
-  "version": "1.0.0",
+  "version": "0.2.1",
   "description": "This is the Shopgate Connect Extension for our wheather app",
   "scripts": {
     "precommit": "npm run test && npm run lint-staged",

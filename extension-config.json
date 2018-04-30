@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.1",
   "id": "@massive-apps/weather-station-api",
   "steps": [],
   "configuration": {
@@ -8,6 +8,39 @@
       "destination": "backend",
       "params": {
         "value": "30000"
+      }
+    },
+    "fhemApiUrl" : {
+      "type" : "bigApi",
+      "destination" : "backend",
+      "default": null,
+      "params": {
+        "method":  "GET",
+        "service": "config",
+        "path": "/v1/shop/%(shopId)s/bigcommerce_api_credentials?parsed=true",
+        "key": "value.fhemApiUrl"
+      }
+    },
+    "basicAuthUsername" : {
+      "type" : "bigApi",
+      "destination" : "backend",
+      "default": null,
+      "params": {
+        "method":  "GET",
+        "service": "config",
+        "path": "/v1/shop/%(shopId)s/bigcommerce_api_credentials?parsed=true",
+        "key": "value.basicAuthUsername"
+      }
+    },
+    "basicAuthPassword" : {
+      "type" : "bigApi",
+      "destination" : "backend",
+      "default": null,
+      "params": {
+        "method":  "GET",
+        "service": "config",
+        "path": "/v1/shop/%(shopId)s/bigcommerce_api_credentials?parsed=true",
+        "key": "value.basicAuthPassword"
       }
     }
   }

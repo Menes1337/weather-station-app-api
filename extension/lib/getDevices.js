@@ -1,11 +1,10 @@
-const FhemApiFactory = require('./fhem-api/factory')
+const FhemApiFactory = require('./fhem-api/Factory')
 
 /**
  * @param {Context} context
  * @param {GetDeviceInput} input
- * @param {GetDeviceExtensionCallback} cb
  */
-module.exports = async (context, input, cb) => {
+module.exports = async (context, input) => {
   const fhemApiFactory = new FhemApiFactory()
   const fhemApiClient = fhemApiFactory.get(
     context.config.fhemApiUrl, {
@@ -13,5 +12,10 @@ module.exports = async (context, input, cb) => {
       password: context.config.basicAuthPassword
     }
   )
-  cb(null, {devices: await fhemApiClient.getDevices()})
+  try {
+    return {devices: await fhemApiClient.getDevices()}
+  } catch (error) {
+    context.log.info(error)
+    throw error
+  }
 }

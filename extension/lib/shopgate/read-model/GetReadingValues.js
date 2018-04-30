@@ -1,7 +1,7 @@
 /**
  * @callback GetReadingValuesExtensionCallback
  * @param {Error|null} error
- * @param {ReadingValueDef} readingValues
+ * @param {ReadingValueDef|null} readingValues
  */
 
 /**

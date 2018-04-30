@@ -10,13 +10,11 @@
       },
       {
         "key": "reading",
-        "id": "101",
-        "optional": true
+        "id": "101"
       },
       {
         "key": "fromTimestamp",
-        "id": "102",
-        "optional": true
+        "id": "102"
       },
       {
         "key": "toTimestamp",
@@ -42,13 +40,11 @@
           },
           {
             "key": "reading",
-            "id": "101",
-            "optional": true
+            "id": "101"
           },
           {
             "key": "fromTimestamp",
-            "id": "102",
-            "optional": true
+            "id": "102"
           },
           {
             "key": "toTimestamp",
